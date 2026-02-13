@@ -2,64 +2,67 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
+    <main className="min-h-screen flex items-center justify-center">
+      <section className="min-h-screen flex flex-wrap items-end justify-center w-[100%] bg-[url('/slider1bgr.jpg')]">
+        <div className="w-[100%] px-3 lg:px-0 order-2 flex flex-col items-start justify-start mb-10 gap-6 lg:order-1 lg:w-[43%] ">
+          <button className="py-3 px-8 rounded-3xl text-white text-[14px] bg-[linear-gradient(135deg,#D4A5B4,#745DB0)] hover:bg-[linear-gradient(135deg,#745DB0,#D4A5B4)]">WELCOME TO SALEPUSH</button>
+          <h1 className="text-[2.5rem] lg:text-[3.75rem] text-[rgb(34, 31, 63)] font-[700] ">
+            The Experts in Optimizing Your Site!
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+          <p className="text-gray-500">On a broad scale, I see SEO becoming a normalized marketing tactic, the same way TV, radio, and print are traditionally thought of as marketing tactics</p>
+          <button className="py-3 mb-15 px-12 rounded-3xl text-white text-[14px] bg-[#221F3F] hover:bg-[#d07e49]">Free SEO Analysis</button>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        <div className="relative order-1 lg:order-2 w-[100%] lg:w-[57%] bg-no-repeat min-h-125 mt-20 lg:mt-0 lg:min-h-198">
+          <img
+            src="slider11.png"
+            alt="Background"
+            className="absolute right-0 top-0 h-125 lg:h-full w-auto z-0"
+          />
+          <img
+            src="Slider12.png"
+            alt="left border"
+            className="absolute right-0 top-0 h-full w-auto z-10"
+          />
+          <img
+            src="Slider13.png"
+            alt="orange circl"
+            className="absolute left-0 bottom-0 h-[90%] lg:h-full w-auto scale-then-fade "
+          />
+          <img src="Slider14.png" className="absolute bottom-0" alt="Tow Girls laughing" />
+          <img
+            src="slider1-item1.png"
+            alt="Arrow icon"
+            className="absolute left-[2%] bottom-[42%] w-[75px] lg:w-auto z-10 scale"
+          />
+          <img
+            src="slider1-item2.png"
+            alt="Cylender icon"
+            className="absolute left-[12%] bottom-[7.5%] w-[80px] lg:w-auto z-10 scale"
+          />
+          <img
+            src="slider1-item3.png"
+            alt="circle icon"
+            className="absolute right-[28%] -bottom-[5%] w-[95px] lg:w-auto z-10 scale"
+          />
+          <img
+            src="slider1-item4.png"
+            alt="Dollar icon"
+            className="absolute right-[18%] bottom-[25%] w-[50px] lg:w-auto z-10 scale"
+          />
+          <img
+            src="slider1-item5.png"
+            alt="Google icon"
+            className="absolute right-[17%] top-[35%] w-[40px] lg:w-auto z-10 scale-google"
+          />
+          <img
+            src="slider1-item6.png"
+            alt="Message icon"
+            className="absolute left-[30%] top-[20%] w-[70px] lg:w-auto z-10 fromtop-float"
+          />
+
+
         </div>
-      </main>
-    </div>
+      </section>
+    </main>
   );
 }
